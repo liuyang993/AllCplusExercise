@@ -1,8 +1,10 @@
 #include<iostream>
 #include<assert.h>
 #include "OgreSharedPtr.h"
+#include "OSGRef_ptr.h"
+#include "OSGreference.h"
 
-class CA 
+class CA : public Referenced
 {
 public:
 	CA() { i  =0; };
@@ -36,9 +38,27 @@ void UseOgreSharedPointer()
 	return;
 }
 
+void UseOSGRefPointer()
+{
+
+	ref_ptr<CA> SharedC1 = new CA();
+		CA *c2 = new CA();
+
+	//ref_ptr<CA> SharedC2 = SharedC1 ;
+	//delete c1;
+	/*CA *c2 = c1;*/
+
+	return;
+
+}
+
 void main()
 {
 	WildPointer();
 	UseOgreSharedPointer();
+
+	UseOSGRefPointer();
+
+
 	return;
 }

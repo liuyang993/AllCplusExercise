@@ -76,10 +76,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="OSGreference.cpp" />
     <ClCompile Include="SmartPoint.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="OgreSharedPtr.h" />
+    <ClInclude Include="OSGreference.h" />
+    <ClInclude Include="OSGRef_ptr.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
