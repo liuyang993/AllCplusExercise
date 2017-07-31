@@ -4,6 +4,7 @@
 class Referenced;
 class Node;
 class Drawable;
+class Object;
 
 class  CopyOp
 {
@@ -39,7 +40,7 @@ class  CopyOp
 
         virtual Referenced*     operator() (const Referenced* ref) const;
 		virtual Node*           operator() (const Node* node) const;
-		virtual Drawable*       operator() (const Drawable* drawable) const;
+        virtual Object*         operator() (const Object* obj) const;
 
     protected:
 

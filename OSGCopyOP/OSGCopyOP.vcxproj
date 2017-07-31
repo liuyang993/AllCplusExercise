@@ -12,9 +12,17 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CopyOP.h" />
+    <ClInclude Include="Node.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="OSGreference.h" />
+    <ClInclude Include="OSGRef_ptr.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CopyOP.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Node.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="OSGreference.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{4E372C58-1A22-46B3-BDCF-707738E55248}</ProjectGuid>
